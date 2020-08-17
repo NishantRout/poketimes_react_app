@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Post from './components/Post';
 import Home_redux from './components/Home_redux';
+import Post_redux from './components/Post_redux';
 
 class App extends Component {
   render(){
@@ -18,7 +19,7 @@ class App extends Component {
             <Route exact path='/home' component={Home_redux} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
-            <Route path='/:post_id' component={Post} />
+            <Route path='/:post_id' component={Post_redux} />
           </Switch>
         </div>
       </BrowserRouter>
